@@ -1,197 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Kumari Restaurant Menu</title>
-    <style>
-      body {
-        font-family: "Segoe UI", sans-serif;
-        background: #fff8f0;
-        color: #1d1a1a;
-        padding: 20px;
-        max-width: 800px;
-        margin: auto;
-      }
-      h1 {
-        text-align: center;
-        color: rgb(196, 56, 56);
-      }
-      .menu-section {
-        margin-bottom: 40px;
-      }
-      .menu-section h2 {
-        border-bottom: 2px solid #b33;
-        padding-bottom: 5px;
-        color: #b33;
-      }
-      .menu-item {
-        margin: 8px 0;
-        display: flex;
-        justify-content: space-between;
-      }
-      .menu-item span {
-        font-weight: bold;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Kumari Restaurant</h1>
-    <p style="text-align: center; font-style: italic">
-      Authentic Newari & Nepali Cuisine
-    </p>
-    <div class="menu-section">
-      <h2>Breakfast</h2>
-      <div class="menu-item">Plain omlette<span>Rs. 80</span></div>
-      <div class="menu-item">Masala omlette<span>Rs. 120</span></div>
-      <div class="menu-item">
-        Bread Toast with Butter/Jam <span>Rs. 110/130</span>
-      </div>
-      <div class="menu-item">American Breakfast<span>Rs. 300</span></div>
+<head>
+<meta charset="UTF-8">
+<title>Kumari Restaurant – Premium Menu</title>
+
+<style>
+body {
+  margin: 0;
+  background: #0b0b0b;
+  color: #e6c98b;
+  font-family: "Playfair Display", Georgia, serif;
+}
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;        /* force exact center */
+  padding: 40px 0;       /* remove side padding */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+
+.column {
+  border: 1px solid #5c4a2c;
+  padding: 25px;
+}
+
+.logo {
+  text-align: center;
+  grid-column: 1 / -1;
+  margin-bottom: 30px;
+}
+
+.logo h1 {
+  font-size: 46px;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.logo p {
+  font-style: italic;
+  color: #c7b07a;
+  margin-top: 6px;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.section h2 {
+  font-size: 20px;
+  border-bottom: 1px solid #5c4a2c;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+.price {
+  color: #e6c98b;
+}
+
+.food-img {
+  width: 100%;
+  margin: 18px 0;
+  text-align: center;
+    display:flex;
+}
+
+.food-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #5c4a2c;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
+  color: #c7b07a;
+}
+</style>
+</head>
+
+<body>
+
+<div class="menu">
+
+  <!-- LOGO -->
+  <div class="logo">
+    <h1>KUMARI RESTAURANT</h1>
+    <p>Traditional Newari & Nepali Dishes</p>
+  </div>
+
+  <!-- LEFT COLUMN -->
+  <div class="column">
+    <div class="food-img">
+      <img src="bread.jpg">
+            <img src="bf.jpg">
+
+    </div>
+    <div class="section">
+      <h2>BREAKFAST</h2>
+      <div class="item"><span>Plain Omelette</span><span class="price">80</span></div>
+      <div class="item"><span>Masala Omelette</span><span class="price">130</span></div>
+      <div class="item"><span>American Breakfast</span><span class="price">300</span></div>
       <p style="font-size: small; font-style: italic">
         Eggs (scrambled, fried, or omelette) sausage, bread Toast, fried
         potatoes, fresh fruit or coffee
       </p>
-    </div>
-    <div class="menu-section">
-      <h2>Beverages</h2>
-      <div class="menu-item">Black Tea <span>Rs. 25</span></div>
-      <div class="menu-item">Milk Tea <span>Rs. 35</span></div>
-      <div class="menu-item">Masala Tea <span>Rs. 50</span></div>
-      <div class="menu-item">Black Coffee <span>Rs. 50</span></div>
-      <div class="menu-item">Milk Coffee <span>Rs. 60</span></div>
-      <div class="menu-item">Coke/Fanta/Sprite <span>Rs. 60</span></div>
-      <div class="menu-item">Real Juice<span>Rs. 60</span></div>
-      <div class="menu-item">Red Bull<span>Rs. 150 </span></div>
-      <div class="menu-item">Mineral Water <span>Rs. 30</span></div>
-      <div class="menu-item">Plain Milk Shake <span>Rs. 100</span></div>
-      <div class="menu-item">Banana Milk Shake<span>Rs. 130</span></div>
-      <div class="menu-item">Chocolate Milk Shake <span>Rs. 160</span></div>
-      <div class="menu-item">Lassi (Sweet/Salted) <span>Rs. 100</span></div>
+      <div class="item"><span>Bread Toast with Butter/Jam </span><span class="price">110/130</span></div>
     </div>
 
-    <div class="menu-section">
-      <h2>Soup</h2>
-      <div class="menu-item">Veg with Mushroom <span>Rs. 90/120</span></div>
-      <div class="menu-item">Chicken soup <span>Rs. 150</span></div>
-      <div class="menu-item">Hot & sour(veg/ non-veg) <span>Rs. 130</span></div>
-    </div>
-    <div class="menu-section">
-      <h2>Chowmein</h2>
-      <div class="menu-item">Veg / Egg <span>Rs. 110/ 130</span></div>
-      <div class="menu-item">Buff Chowmein <span>Rs. 150</span></div>
-      <div class="menu-item">Chicken Chowmein <span>Rs. 170</span></div>
-      <div class="menu-item">Pork Chowmein <span>Rs. 180</span></div>
-      <div class="menu-item">Mixed Chowmein<span>Rs. 200</span></div>
-    </div>
-    <div class="menu-section">
-      <h2>Mo:Mo</h2>
-      <div class="menu-item">
-        Buff (Steam, Fried, "c", Soup)<span>Rs. 150/180/200/200</span>
-      </div>
-      <div class="menu-item">
-        Chicken (Steam, Fried, "c", Soup) <span>Rs. 170/200/220/210</span>
-      </div>
-    </div>
-    <div class="menu-section">
-      <h2>Thupka</h2>
-      <div class="menu-item">Veg/Egg<span>Rs.130/150</span></div>
-      <div class="menu-item">Buff <span>Rs. 150</span></div>
-      <div class="menu-item">Chicken <span>Rs. 170</span></div>
-      <div class="menu-item">Mixed <span>Rs. 200</span></div>
-    </div>
-    <div class="menu-section">
-      <h2>Grill</h2>
-      <div class="menu-item">Pork<span>Rs.300</span></div>
-      <div class="menu-item">Buff <span>Rs. 220</span></div>
-      <div class="menu-item">Chicken <span>Rs. 250</span></div>
-      <div class="menu-item">Fish <span>Rs. 250</span></div>
-      <div class="menu-item">Mutton <span>Rs. 380</span></div>
-    </div>
-    <div class="menu-section">
-      <h2>Newari Specials</h2>
-      <div class="menu-item">
-        Baji Set(Veg/buff/chicken)<span>Rs. 180/ 250</span>
-      </div>
-      <div class="menu-item">Buff Chhoila <span>Rs. 250</span></div>
-      <div class="menu-item">Chicken Chhoila <span>Rs. 300</span></div>
-      <div class="menu-item">
-        Chatamari (Newari Pizza) (Veg/buff/chicken/mix)<span
-          >Rs. 120/130/150/200</span
-        >
-      </div>
-      <div class="menu-item">
-        Bara (Plain/ Buff/ Chicken/ Mix) <span>Rs. 110/130/150/200</span>
-      </div>
-      <div class="menu-item">
-        Bhutan (Buff/ Chicken/Mutton) <span>Rs. 120/160/200</span>
-      </div>
-      <div class="menu-item">Yomari (2 pcs) <span>Rs. 120</span></div>
+    <div class="food-img">
+      <img src="mushroom copy.jpg">
+      <img src="chkensoup.jpg">
     </div>
 
-    <div class="menu-section">
-      <h2>Nepali Classics</h2>
-      <div class="menu-item">Dal Bhat Tarkari (Veg) <span>Rs. 280</span></div>
-      <div class="menu-item">
-        Dal Bhat with Chicken Curry <span>Rs. 350</span>
-      </div>
-      <div class="menu-item">Dal Bhat with Buff <span>Rs. 350</span></div>
-      <div class="menu-item">
-        Dal Bhat with Mutton Curry <span>Rs. 450</span>
-      </div>
-      <div class="menu-item">Dal Bhat with Pork<span>Rs. 400</span></div>
-      <div class="menu-item">Local chicken set<span>Rs. 3500</span></div>
-      <p style="font-size: small; font-style: italic">(Choila, Bhutan, Curry, Soup)</p>
-      <div class="menu-item">Roti Tarkari(2 pcs) <span>Rs. 100</span></div>
-    </div>
-
-    <div class="menu-section">
-      <h2>Fast Food & Snacks</h2>
-      <div class="menu-item">Aloo Dum <span>Rs. 60</span></div>
-      <div class="menu-item">Aloo Sadeko <span>Rs. 60</span></div>
-      <div class="menu-item">French Fries <span>Rs. 150</span></div>
-      <div class="menu-item">Onion/ veg Pakoda <span>Rs. 110/ 100</span></div>
-      <div class="menu-item">Chips Chilly <span>Rs. 130</span></div>
-      <div class="menu-item">Waiwai Sadeko <span>Rs. 80</span></div>
-      <div class="menu-item">Mushroom Chilly <span>Rs. 170</span></div>
-      <div class="menu-item">Mushroom Choila <span>Rs. 170</span></div>
-      <div class="menu-item">
-        Peanuts(Plain/ Masala/ Sadeko) <span>Rs. 70/100/120</span>
-      </div>
-      <div class="menu-item">
-        Bhatmas (Plain/sadeko) <span>Rs. 60/110</span>
-      </div>
-      <div class="menu-item">
-        Papad(Dry/ Fry/ Masala) <span>Rs.40/50/90</span>
-      </div>
-      <div class="menu-item">Mixed Veg Boil<span>Rs. 200</span></div>
-      <div class="menu-item">Green Salad<span>Rs. 120</span></div>
-      <div class="menu-item">Fruit Salad<span>Rs. 200</span></div>
-    </div>
-
-    <div class="menu-section">
-      <h2>Beer</h2>
-      <div class="menu-item">Nepal Ice <span>Rs. 500</span></div>
-      <div class="menu-item">Tuborg(Hot/Iced) <span>Rs. 550 </span></div>
-      <div class="menu-item">Gorkha <span>Rs. 500</span></div>
-      <div class="menu-item">Carlsberg<span>Rs. 600</span></div>
-      <div class="menu-item">Barahsinghe<span>Rs. 500</span></div>
+    <div class="section">
+      <h2>SOUP</h2>
+      <div class="item"><span>Veg / Mushroom</span><span class="price">90 / 120</span></div>
+      <div class="item"><span>Chicken Soup</span><span class="price">Rs. 150</span></div>
+      <div class="item"><span>Hot & Sour (Veg/Non-Veg)</span><span class="price">Rs. 130</span></div>
     </div>
     
-     <div class="menu-section">
-      <h1> Domestic Spirits</h1>
-       <h2>WHISKEY</h2>
-       <div class="menu-item">OD Black (Qtr/ half/ full)<span>Rs. 1125/ 2250/ 4500</span></div>
-      <div class="menu-item">OD Red (Qtr/ half/ full) <span>Rs. 875/ 1750/ 3500 </span></div>
-      <div class="menu-item"> Signature (Green) (Qtr/ half/ full)<span>Rs. 845/ 1685/ 3375 /</span></div>
-      <div class="menu-item"> Signature (Red)  (Qtr/ half/ full)<span>Rs. 880/ 1760/ 3520 /</span></div>
-       
-       <h2>VODKA</h2>
-     <div class="menu-item">8848 (Qtr/ Half/ Full) <span>Rs. 725/ 1450/ 2900</span></div>
-      <div class="menu-item">Ruslan (Qtr/ Half/ Full) <span>Rs. 595/ 1190/ 2375</span></div>
-
-       <h2> RUM </h2>
-      <div class="menu-item">Khukuri  (Qtr/ Half/ Full) <span>Rs. 700/ 1410/ 2820</span></div>
+<div class="food-img">
+      <img src="momo.jpg">
+      <img src="jhol.jpg">
     </div>
-  </body>
-</html>
 
+    <div class="section">
+      <h2>MO:MO</h2>
+      <div class="item"><span>Buff (Steam/Fried/C/Soup)</span><span class="price">150/180/200/200</span></div>
+      <div class="item"><span>Chicken (Steam/Fried/C/Soup)</span><span class="price">170/200/220/220</span></div>
+    </div>
+<div class="food-img">
+    <img src="thupka.jpg">
+    <img src="thupka2.jpg"> 
+</div>
+    <div class="section">
+      <h2>THUPKA</h2>
+      <div class="item"><span>Veg / Egg</span><span class="price">130 / 150</span></div>
+      <div class="item"><span>Buff</span><span class="price">150</span></div>
+      <div class="item"><span>Chicken</span><span class="price"> 170</span></div>
+      <div class="item"><span>Mixed</span><span class="price"> 200</span></div>
+    </div>
+  </div>
+
+  <!-- CENTER COLUMN -->
+  <div class="column">
+    <div class="food-img"">
+      <img src="khaja.jpg">
+     <img src="yomari.jpg.png">
+     <img src="Chatamari.jpg">
+
+    </div>
+
+    <div class="section">
+      <h2>NEWARI SPECIALS</h2>
+      <div class="item"><span>Khaja Set (Veg/Buff/Chicken)</span><span class="price">180 / 250</span></div>
+      <div class="item"><span>Buff Chhoila</span><span class="price">250</span></div>
+      <div class="item"><span>Chicken Chhoila</span><span class="price">300</span></div>
+      <div class="item"><span>Chatamari(Newari Pizza) (Veg/buff/chicken/mix)</span><span class="price"> 120/130/150/220</span></div>
+      <div class="item"><span>Bara</span><span class="price">110–200</span></div>
+      <div class="item"><span>Bhutan</span><span class="price"> 120–200</span></div>
+      <div class="item"><span>Yomari (2 pcs)</span><span class="price"> 120</span></div>
+    </div>
+<div class="food-img">
+      <img src="khana.jpg">
+     <img src="khana2.jpg">
+
+    </div>
+
+    <div class="section">
+      <h2>NEPALI CLASSICS</h2>
+      <div class="item"><span>Dal Bhat (Veg)</span><span class="price"> 280</span></div>
+      <div class="item"><span>Dal Bhat (Chicken/Buff)</span><span class="price"> 350</span></div>
+      <div class="item"><span>Dal Bhat (Pork)</span><span class="price">400</span></div>
+      <div class="item"><span>Dal Bhat (Mutton)</span><span class="price"> 450</span></div>
+      <div class="item"><span>Local Chicken Set</span><span class="price"> 3500</span></div>
+      <div class="note">Choila, Bhutan, Curry & Soup</div>
+    </div>
+<div class="food-img">
+      <img src="chowmine.jpg">
+     <img src="noodles.jpg">
+
+    </div>
+
+    <div class="section">
+      <h2>CHOWMEIN</h2>
+      <div class="item"><span>Veg / Egg</span><span class="price">110 / 130</span></div>
+      <div class="item"><span>Buff</span><span class="price"> 150</span></div>
+      <div class="item"><span>Chicken</span><span class="price"> 170</span></div>
+      <div class="item"><span>Pork</span><span class="price"> 180</span></div>
+      <div class="item"><span>Mixed</span><span class="price"> 200</span></div>
+    </div>
+
+    <div class="section">
+      <h2>GRILL</h2>
+      <div class="item"><span>Pork</span><span class="price">300</span></div>
+      <div class="item">Buff <span  class="price"> 220</span></div>
+      <div class="item">Chicken <span  class="price"> 250</span></div>
+      <div class="item">Fish <span class="price"> 250</span></div>
+      <div class="item">Mutton <span class="price"> 380</span></div>
+    </div>
+  </div>
+
+
+    
+  <!-- RIGHT COLUMN -->
+  <div class="column">
+       <div class="section">
+  <h2>FAST FOOD & SNACKS</h2>
+
+  <div class="item"><span>Aloo Dum</span><span class="price">80</span></div>
+  <div class="item"><span>Aloo Sadeko</span><span class="price">80</span></div>
+  <div class="item"><span>French Fries</span><span class="price">150</span></div>
+  <div class="item"><span>Onion Pakoda</span><span class="price">110</span></div>
+  <div class="item"><span>Veg Pakoda</span><span class="price">100</span></div>
+  <div class="item"><span>Chips Chilly</span><span class="price">150</span></div>
+  <div class="item"><span>Wai Wai Sadeko</span><span class="price">80</span></div>
+  <div class="item"><span>Mushroom Chilly</span><span class="price">170</span></div>
+  <div class="item"><span>Mushroom Choila</span><span class="price">170</span></div>
+  <div class="item">
+    <span>Peanuts (Plain / Masala / Sadeko)</span>
+    <span class="price">70 / 100 / 120</span>
+  </div>
+    <div class="food-img">
+      <img src="coke.jpg">
+      <img src="coffee.jpg">
+    </div>
+
+    <div class="section">
+      <h2>BEVERAGES</h2>
+      <div class="item"><span>Black / Milk / Masala Tea</span><span class="price">25–50</span></div>
+      <div class="item"><span>Black / Milk Coffee</span><span class="price">50–60</span></div>
+      <div class="item"><span>Cold Drinks / Juice</span><span class="price">60</span></div>
+      <div class="item"><span>Milk Shake</span><span class="price">130–200</span></div>
+      <div class="item"><span>Lassi</span><span class="price"> 120</span></div>
+     <div class="item">Mineral Water <span class="price"> 30</span></div>
+
+    </div>
+<div class="food-img">
+      <img src="beer.jpg">
+            <img src="beer2.jpg">
+
+    </div>
+
+    <div class="section">
+      <h2>BEER</h2>
+      <div class="item"><span>Nepal Ice / Gorkha</span><span class="price"> 500</span></div>
+      <div class="item"><span>Tuborg</span><span class="price"> 550</span></div>
+      <div class="item"><span>Carlsberg</span><span class="price">600</span></div>
+      <div class="item"><span>Barahsinghe</span><span class="price"> 500</span></div>
+    </div>
+<div class="food-img">
+      <img src="od.jpg">
+    
+
+    </div>
+    <div class="section">
+      <h2>DOMESTIC SPIRITS</h2>
+
+      <div class="item"><span>OD Black (Qtr/ half/ full)</span><span class="price"> 1125/ 2250/ 4500</span></div>
+      <div class="item"><span>OD Red (Qtr/ half/ full)</span><span class="price">875/ 1750/ 3500 </span></div>
+      <div class="item"><span>Signature(Qtr/ half/ full)</span><span class="price"> 845/ 1685/ 3375 </span></div>
+    <div class="item"><span>Signature (Red)  (Qtr/ half/ full)</span><span class="price">  880/ 1760/ 3520 </span></div>
+        
+      <div class="item"><span>8848 Vodka (Qtr/ Half/ Full)</span><span class="price"> 725/ 1450/ 2900</span></div>
+      <div class="item"><span>Ruslan Vodka (Qtr/ Half/ Full)</span><span class="price"> 595/ 1190/ 2375</span></div>
+      <div class="item"><span>Khukuri Rum(Qtr/ Half/ Full)</span><span class="price">700/ 1410/ 2820</span></div>
+    </div>
+  </div>
+
+ 
+
+</div>
+ <div class="footer">
+  Kumari Restaurant • Tokha, Kathmandu<br>
+  Fresh Ingredients • Authentic Taste
+</div>
+</body>
+</html>
